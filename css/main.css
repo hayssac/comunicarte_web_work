@@ -1,0 +1,711 @@
+/*
+  Theme Name: Oxygen
+  Theme Uri: http://www.themeum.com
+  Author: Themeum
+  Author Uri: http://www.themeum.com
+  Description: Onepage Site Template
+  Version: 1.0
+*/
+
+/*************************
+*******Typography******
+**************************/
+@font-face {
+    font-family: 'LemonMilk';
+    src: url('fonts/LemonMilk.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Raleway-SemiBold';
+  src: url('fonts/Raleway-SemiBold.ttf') format('truetype');
+  /*font-weight: 300;*/
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway-SemiBold';
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+  background-color: #F2F2F2;
+}
+
+.upper-nav {
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  border: none;
+}
+
+.upper-nav .img-responsive {
+  max-height: 45px;
+}
+
+#home {
+  background-color: #292622;
+}
+
+#home .img-responsive {
+  max-height: 45px;
+}
+
+h1 {
+  color: #F2F2F2 ;
+  font-family: 'LemonMilk';
+  font-size: 50px;
+  font-weight: 500;
+}
+
+h2 {
+  color: #EB8305 ;
+  font-family: 'LemonMilk';
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+h3, h4, h5, h6 {
+  color: #292622;
+  font-family: 'LemonMilk';
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.parallax {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.navbar-nav li a:hover, 
+.navbar-nav li a:focus {
+  outline:none;
+  outline-offset: 0;
+  text-decoration:none;  
+  background: transparent;
+}
+
+.header_comunicarte {
+  width: 100%;
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+  outline: none;
+  color: #EB8305;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+section {
+  padding: 50px 0;
+}
+
+.heading {
+  padding-bottom: 50px;
+}
+
+.heading h2 {
+  margin-bottom: 25px;
+}
+
+/*** Presets **/
+
+.nav > li > a {
+  padding: 5px 5px; 
+}
+/*************************
+********Home CSS**********
+**************************/
+
+#home-slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.caption {
+  position: absolute;
+  top: 50%;
+  margin-top: -104px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 15;
+  font-size: 18px;
+  font-weight: 300;
+  color: #F2F2F2;
+}
+
+.caption h1 {
+  margin-bottom: 10px;
+}
+
+.caption h1 span {
+  color: #EB8305;
+}
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 2037px;
+}
+
+.carousel-fade .carousel-inner .item:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,.7);
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.main-nav {
+  background-color: #292622;
+  width: 100%;
+  box-shadow: 2px 2px 5px #000000; 
+}
+
+.navbar-right li a {
+  color: #F2F2F2;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.navbar-right li.active a {
+  color: #EB8305;
+}
+
+.navbar-brand h1 {
+  margin-top: 5px;
+}
+
+/*************************
+********Service CSS*******
+**************************/
+
+.service-icon {
+  border-radius: 50%;
+  color: #EB8305;
+  display: inline-block;
+  font-size: 60px;
+  height: 120px;
+  line-height: 120px;
+  width: 120px;  
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+.our-services .col-sm-4:hover .service-icon {
+  background-color: #292622;
+}
+
+.service-info h3 {
+  margin-top: 35px;
+}
+
+/*************************
+********portfolio CSS*****
+**************************/
+
+#projetos_comunicarte .col-sm-6 {
+  overflow: hidden;
+  padding: 0;
+}
+
+.fixedheight {
+  max-height: 430px;
+}
+
+.folio-item {
+  max-height: 430px;
+  position: relative;
+}
+
+.folio-link .folio-read-more:hover{
+  color: #EB8305;
+}
+
+#projetos_comunicarte .overlay {
+  background-color: #F2F2F2;
+  color: #F2F2F2; 
+  left: 0;
+  right:0;
+  bottom:-100%;
+  height: 0;
+  position: absolute;
+  text-align: center;
+  opacity:0;  
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#projetos_comunicarte #orange {
+  background-color: #EB8305;
+}
+
+#projetos_comunicarte #darkgray {
+   background-color: #292622;
+}
+
+.overlay .overlay-content {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.overlay .overlay-text {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.overlay .folio-info {
+  opacity: 0;
+  margin-bottom: 75px;
+  margin-top: -75px;
+  margin-right: 50px;
+  margin-left: 50px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.overlay .folio-info h3 {
+  margin-top: 0;
+  color: #F2F2F2;
+}
+
+.folio-overview a {
+  font-size: 18px;
+  color: #333;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 5px;
+}
+
+.folio-overview .folio-expand {
+  margin-top: -500px;
+  margin-left: -500px;
+}
+
+.folio-image, .folio-overview .folio-expand {
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.folio-item:hover .folio-image {
+  -webkit-transform: scale(1.5) rotate(-15deg);
+  transform: scale(1.5) rotate(-15deg);
+}
+
+.folio-image img {
+  width: 100%;
+}
+
+#projetos_comunicarte .folio-item:hover .overlay {
+  opacity: 0.8;
+  bottom: 0;
+  height: 100%;
+}
+
+.folio-item:hover .folio-overview .folio-expand {
+  margin-top: 0;
+  margin-left:0;
+}
+
+.folio-item:hover .overlay .folio-info {
+  opacity: 1;  
+  margin-bottom:0;
+  margin-top:0;
+}
+
+/*************************
+*********Team CSS*********
+**************************/
+#equipe_comunicarte {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#equipe_comunicarte .img-responsive {
+  width: 100%;
+}
+
+#equipe_comunicarte .row .col-sm-4 {
+  padding: 0 30px;
+}
+
+.member-info {
+  width: 100%;
+  height: 100%;
+  background-color: #292622;
+  padding: 15px 0;
+  margin: 0 0 50px !important;
+}
+
+.member-info h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #EB8305;
+}
+
+.member-info p {
+  margin-bottom: 0px;
+  color: #F2F2F2;  
+}
+
+
+.social {
+  padding: 8px 0 0 !important;
+  text-align: center;
+  display: inline-block;
+}
+
+.social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social ul li {
+  display: inline-block;
+}
+
+.social ul li .sns{
+  color: #F2F2F2;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  display: inline-block;
+  font-size: 18px;
+}
+
+.social ul li .sns:hover{
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  color: #EB8305;
+}
+
+#modalTeam .img-responsive {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#modalTeam {
+  padding-right: 0px;
+}
+
+#modalTeam .row {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#modalTeam .row, h2 {
+  margin-bottom: 0;
+}
+
+#modalTeam h4 {
+  font-family: 'Raleway-SemiBold';
+}
+
+#modalTeam .modal-dialog {
+  width: 85%;
+}
+
+#modalTeam .modal-content {
+  border-radius: 0px;
+}
+
+#modalTeam .modal-body {
+  padding: 30px;
+}
+
+#modalTeam .social-icons ul {
+  padding: 0;
+  margin: 0;
+}
+
+#modalTeam .modal-body .social-icons li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 2px;
+  font-size: 16px;
+}
+
+#modalTeam .modal-body .social-icons .sns{
+  color: #292622;
+}
+
+#modalTeam .modal-body .social-icons .sns:hover{
+  background-color: #FFFFFF;
+  color: #EB8305;
+}
+
+#modalTeam .modal-footer {
+  background-color: #292622;
+  text-align: center;
+  padding: 10px;
+}
+
+#modalTeam .modal-footer img {
+  max-height: 40px;
+  max-width: 40px;
+  display: inline-block;
+}
+
+/*************************
+**********Blog CSS********
+**************************/
+
+#blog_comunicarte {
+  background-color: #292622;
+  min-height: 450px;
+}
+
+.anuncioblog {
+  margin-top: 50px;
+}
+
+.anuncioblog a {
+  color: #EB8305;
+}
+
+.anuncioblog a:hover {
+  text-decoration: underline;
+}
+
+.blog_posts .row {
+  min-height: 95px;
+}
+
+.rowspecial {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.blog_data {
+  border-radius: 50%;
+  border: 1px solid #EB8305;
+  text-align: center;
+  height: 105px;
+  width: 105px;
+  margin: 0 auto;
+}
+
+.blog_data h4, h5 {
+  color: #EB8305;
+  font-family: 'Raleway-SemiBold';
+}
+
+.blog_data h4 {
+  font-size: 20px;
+}
+
+.blog_data h5 {
+  font-size: 18px;
+}
+
+.blog_text h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #EB8305;
+}
+
+.blog_text a {
+  color: #599DC5;
+}
+
+.autor_post a:hover {
+  text-decoration: underline;
+}
+
+.blog_text p {
+  margin-bottom: 0px;
+  color: #F2F2F2;
+}
+
+/*************************
+**********Contact CSS*****
+**************************/
+
+#reflexao_comunicarte {
+  padding-top: 0px;
+  padding-bottom: 0;
+  background-image:url(../images/breakcontact/2.jpg);
+  min-height: 650px;
+}
+
+
+#reflexao_comunicarte .heading {
+  padding-top: 25%;
+}
+
+#reflexao_comunicarte h2{
+  text-shadow: 2px 2px #292622;
+  color: #F2F2F2;
+}
+
+#reflexao_comunicarte p{
+  color: #292622;
+  font-size: 20px;
+}
+
+/*************************
+**********Footer CSS*****
+**************************/
+
+#footer_comunicarte {
+  background-color: #292622;
+}
+#footer_comunicarte .img-responsive {
+  max-height: 45px;
+}
+
+.footer-top {
+  position: relative;
+  padding: 19px 0;
+}
+
+.footer_logo {
+  float: left;
+}
+
+#creditos {
+  margin-top: 10px;
+}
+
+#creditos a {
+  padding-left: 10px;
+  color: #EB8305;
+}
+
+#creditos p {
+  line-height: 18px;
+  padding-left: 62px;
+  color: #F2F2F2;
+}
+
+#footer_comunicarte .social-icons {
+  margin-top: 15px;
+  text-align: center;
+}
+
+#footer_comunicarte .social-icons ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+
+#footer_comunicarte .social-icons ul li {
+  margin-left: 8px;
+  display: inline-block;
+}
+
+#footer_comunicarte .social-icons ul li:last-child {
+  margin-right: 0;
+}
+
+#footer_comunicarte .social-icons ul li a {
+  color: #F2F2F2;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  display: block;
+  font-size: 30px;
+  opacity: 1;
+}
+
+.social-icons ul li a:hover {
+  opacity: 1; 
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  color: #EB8305 !important;
+}
+
+/************
+*************
+***Sidebar***
+*************
+*************/
+#menu-right-open, #menu-right-close{
+  float: right;
+}
+
+#menu-right-close {
+  width: 25px;
+  height: 25px;
+}
+
+#menu-right-open:hover {
+  color: #EB8305;
+}
+
+#sidebar-wrapper-right {
+  font-family: 'LemonMilk';
+  margin-right: -200px;
+  margin-top: -50px;
+  right: 200px;
+  width: 200px;
+  background: #292622;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  display: none;
+  text-align: right;
+  padding: 25px;
+}
+
+#menu-right-open {
+  font-size: 30px;
+  padding-top: 23px;
+  color: #F2F2F2;
+}
+
+#spy {
+  margin-top: 150px;
+}
+
+#sidebar-wrapper-right li a {
+  color: #F2F2F2;
+}
+
+#sidebar-wrapper-right a:hover {
+  color: #EB8305;
+  text-decoration: none;
+  background-color: #292622;
+}
+
+.active-right {
+  display: inline-block !important;
+}

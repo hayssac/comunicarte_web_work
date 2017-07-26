@@ -1,0 +1,11 @@
+http://www.corelangs.com/css/box/divindiv.html
+
+http://mynameismatthieu.com/WOW/ - WOW.JS
+http://fontawesome.io/ - Font Awesome
+http://daneden.github.io/animate.css/ - Animate CSS
+
+http://stackoverflow.com/questions/17222829/offset-top-is-null-or-not-an-object-error-in-jquery
+
+http://codepen.io/Xeoncross/pen/zxyWeW
+
+
